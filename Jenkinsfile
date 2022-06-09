@@ -4,7 +4,7 @@ pipeline{
   stages{
   	stage('version-control'){
   		steps{
-  			
+  		checkout([$class: 'GitSCM', branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/devop-org/paraleel-job.git']]])	
   		}
   	}
     stage('parallel-job'){
