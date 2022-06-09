@@ -1,5 +1,4 @@
-# paraleel-
-   
+
 pipeline{
   agent any
   stages{
